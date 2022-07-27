@@ -13,7 +13,7 @@ type InputState = {
 
 export function LoginScreen() {
     const navigation = useNavigation()
-    const [input, setInput] = useState<InputState>({ email: "", password: "" })
+    const [input, setInput] = useState<InputState>({ email: "mateus@gmail.com", password: "" })
 
     const handle = async () => {
         try {
@@ -42,10 +42,12 @@ export function LoginScreen() {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 15 }}>
             <Input
                 label="Email"
+                defaultValue={input.email}
                 onChangeText={value => setInput({ ...input, email: value })}
             />
             <Input
                 label="Password"
+                defaultValue={input.password}
                 onChangeText={value => setInput({ ...input, password: value })}
                 secureTextEntry={true}
             />
