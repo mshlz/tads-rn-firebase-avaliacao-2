@@ -48,6 +48,7 @@ export function LoginScreen() {
             <Input
                 label="Password"
                 defaultValue={input.password}
+                placeholder={'senha default é 123123'}
                 onChangeText={value => setInput({ ...input, password: value })}
                 secureTextEntry={true}
             />
