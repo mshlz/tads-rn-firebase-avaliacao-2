@@ -1,13 +1,16 @@
 import 'react-native-gesture-handler'
+import * as React from "react"
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import * as React from "react"
 import { useAuthentication } from './src/hooks/useAuthentication'
-import { HomeScreen, ListarScreen, LogoutScreen } from './src/screens/app'
 import { FormScreen } from './src/screens/app/FormScreen'
+import { HomeScreen } from './src/screens/app/HomeScreen'
+import { ListarScreen } from './src/screens/app/ListScreen'
+import { LogoutScreen } from './src/screens/app/LogoutScreen'
 import { MapScreen } from './src/screens/app/MapScreen'
-import { LoginScreen, RegisterScreen } from './src/screens/auth'
+import { LoginScreen } from './src/screens/auth/LoginScreen'
+import { RegisterScreen } from './src/screens/auth/RegisterScreen'
 
 
 const Drawer = createDrawerNavigator()

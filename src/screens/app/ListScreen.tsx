@@ -56,6 +56,12 @@ export const ListarScreen = () => {
     </TouchableOpacity>
   )
 
+  if (loading) {
+    return (
+      <ActivityIndicator />
+    )
+  }
+
   return (
     <SafeAreaView>
       {/* se nao tiver nenhum item, exibe mensagem */}
